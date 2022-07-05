@@ -18,7 +18,7 @@ public class UserRegistrationJunit {
 	}
 
 	public boolean validatePassword(String password) {
-		String passwordRegex = "^(?=.*[A-Z])(?=.*[0-9])(?=.{8,}$)[a-zA-Z0-9]*[@#$%^&-+=()][a-zA-Z0-9]*$";
+		String passwordRegex = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()])([a-zA-Z0-9]*).{8,}$";
 		return true;
 	}
 
